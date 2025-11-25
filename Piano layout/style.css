@@ -1,0 +1,88 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-box {
+    background-color: rgb(9, 53, 5);
+    width: 50%;
+    overflow: hidden;
+    height: 65%;
+    border-radius: 8px;
+}
+
+.middle-box {
+    position: relative;
+    bottom: 15px;
+    top: 15px;
+    height: 70%;
+    background-color: #111;
+    padding: 10px;
+}
+
+.white-keys {
+    width: 665px;
+    display: flex;
+    height: 150px;
+    position: relative;
+    z-index: 1;
+}
+
+.white-key {
+    background-color: white;
+    height: 180px;
+    border-radius: 0 0 5px 5px;
+    border: 2px solid black;
+    width: 150px;
+}
+
+.black-keys {
+    height: 425px;
+    width: 630px;
+    display: flex;
+    justify-content: space-between;
+    top: 0px;
+    margin: 11px 0px 12px 10px;
+    position: absolute;
+    border-radius: 0 0 3px 3px;
+    z-index: 2;
+}
+
+.black-key {
+    width: 90px;
+    height: 108px;
+    border: 1px white solid;
+    border-radius: 0 0 5px 5px;
+    background-color: #000000;
+}
+
+.black-none {
+    width: 200px;
+    height: 150px;
+}
+
+.black-keys .black-key:nth-child(1) {
+    margin: 0px 14px 0px 20px;
+}
+
+.black-keys .black-key:nth-child(4) {
+    margin: 0px 14px 0px -27px;
+}
+
+.black-keys .black-key:nth-child(5) {
+    margin: 0px 4px 0px 3px;
+}
+
+
+.black-keys .black-key:nth-child(6) {
+    margin: 0px 2px 0px 10px;
+}
+
+.black-keys .black-key:nth-child(8) {
+    margin: 0px 2px 0px 10px;
+}

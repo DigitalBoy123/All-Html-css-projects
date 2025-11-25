@@ -1,0 +1,370 @@
+/* body {
+    background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 15px;
+    line-height: 1.4; 
+    margin-top: 120xp;
+}
+
+.main-heading {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+form {
+    height: 80%;
+    width: 50%;
+    margin:0% auto ;
+    border-radius: 8px; 
+    padding: 30px;
+    background-color:rgba(27, 27, 50, 0.8);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.125rem;
+    color: white;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 95%;
+    padding: 10px;
+    border: none;
+    font-size: 95%;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+select[id="platform-awarness"] {
+    width: 98%;
+    padding: 10px;
+    border: none;
+    font-size: 95%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+
+}
+
+.course-select {
+    color: white;
+    font-size: 1.125rem;
+
+}
+
+.level-group {
+    margin-bottom: 30px;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+    transform: scale(1.5);
+    margin-bottom: 10px;
+}
+
+
+select[id="platform-awarness"] {
+        color: rgb(139 116 116);
+}
+
+.level-group label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+select[name="course-type"] {
+    width: 98%;
+    padding: 10px;
+    border: none;
+    font-size: 95%;
+    border-radius: 5px;
+    color: rgb(139 116 116);
+    margin-bottom: 30px;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+    transform: scale(1.5);
+}
+
+.interest-group {
+    margin-bottom: 30px;
+}
+
+textarea {
+    width: 97%;
+    border-radius: 5px;
+    resize: vertical;
+    margin-bottom: 20px;
+}
+
+.submit-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 95%;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+    border: none;
+    font-size: 95%;
+    border-radius: 2px;
+    background-color: chartreuse;
+    margin-bottom: 30px;
+}
+
+button:focus {
+    background-color: rgb(63, 104, 23);
+} */
+
+
+
+
+:root {
+    --primary-color: #1b1b32;
+    --secondary-color: #3a3a5e;
+    --accent-color: #37af65;
+    --text-light: #f3f3f3;
+    --text-muted: #8585a0;
+    --border-radius: 6px;
+    --spacing-sm: 10px;
+    --spacing-md: 20px;
+    --spacing-lg: 30px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image:
+        linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)),
+        url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-light);
+    min-height: 100vh;
+    padding: var(--spacing-lg);
+}
+
+.registration-form {
+    max-width: 720px;
+    transform: translateY(6%);
+    margin: 0 auto;
+}
+
+.main-heading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-lg);
+    color: var(--text-light);
+}
+
+form {
+    background-color: rgba(27, 27, 50, 0.6);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius); 
+}
+
+.form-group {
+    margin-bottom: var(--spacing-lg);
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: var(--spacing-sm);
+    border: 2px solid transparent;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    font-family: inherit;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(55, 175, 101, 0.2);
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-light);
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.radio-label,
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    cursor: pointer;
+    padding: 8px 0;
+}
+
+.radio-label input[type="radio"],
+.checkbox-label input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+}
+
+.radio-custom,
+.checkbox-custom {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--text-muted);
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.checkbox-custom {
+    border-radius: 4px;
+}
+
+.radio-label input[type="radio"]:checked+.radio-custom,
+.checkbox-label input[type="checkbox"]:checked+.checkbox-custom {
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+}
+
+.radio-label input[type="radio"]:checked+.radio-custom::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.checkbox-label input[type="checkbox"]:checked+.checkbox-custom::after {
+    content: '✓';
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+    font-family: inherit;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: var(--spacing-sm);
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 1.125rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.submit-btn:hover {
+    background-color: #2e8b57;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.submit-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(55, 175, 101, 0.4);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: var(--spacing-sm);
+    }
+
+    .registration-form {
+        max-width: 100%;
+    }
+
+    .main-heading {
+        font-size: 1.5rem;
+    }
+
+    form {
+        padding: var(--spacing-md);
+    }
+
+    .radio-group,
+    .checkbox-group {
+        gap: 8px;
+    }
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}

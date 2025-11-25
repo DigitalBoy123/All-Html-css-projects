@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link type="image/png" href="img/favicon.png" rel="icon shortcut">
+    <link rel="stylesheet" href="style.css">
+    <title>Fruitkha</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const container = document.querySelector('.video-container');
+            const playButton = document.getElementById('playButton');
+            const playerFrame = document.getElementById('youtubePlayer');
+
+            // YouTube requires a specific format for autoplay to work
+            const videoId = 'So5REm9ZGKs'; // Get this from your iframe src
+            const autoplayURL = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&showinfo=0&controls=1`;
+
+            playButton.addEventListener('click', function () {
+                // 1. Swap the iframe source to include `autoplay=1`
+                playerFrame.src = autoplayURL;
+
+                // 2. Add the class to the container to hide the poster via CSS
+                container.classList.add('video-playing');
+            });
+
+            // Optional: If you click anywhere on the poster, it should play
+            const videoPoster = document.querySelector('.video-poster');
+            videoPoster.addEventListener('click', function () {
+                // If the video isn't already playing, trigger the click
+                if (!container.classList.contains('video-playing')) {
+                    playButton.click();
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>
+            <div class="logo"><img src="img/logo.png" alt="Logo"></div>
+        </header>
+        <div class="main-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Shop</a></li>
+            </ul>
+        </div>
+
+        <div class="Action-icons">
+            <ul>
+                <li><a href="#"><i class="fas fa-search"></i></a></li>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="hero">
+        <p>Fresh & Organic</p>
+        <h1>Delicious Seasonal Fruits</h1>
+        <div class="buttons">
+            <button class="btn-1"><a href="#">Fruit Collection</a></button>
+            <button class="btn-2"><a href="#">Contact Us</a></button>
+        </div>
+    </div>
+
+    <main>
+
+        <section id="services">
+            <div class="shiping">
+                <div class="icon-logo">
+                    <i class="fas fa-shipping-fast"></i>
+                </div>
+                <div class="services-text">
+                    <h3 class="sh-text-1">Free Shipping</h3>
+                    <p class="sh-text-2">When order over $75</p>
+                </div>
+            </div>
+
+            <div class="support">
+                <div class="icon-logo ">
+                    <i class="fas fa-phone-volume"></i>
+                </div>
+                <div class="support-text">
+                    <h3 class="sh-text-1">24/7 Support</h3>
+                    <p class="sh-text-2">Get support all day</p>
+                </div>
+            </div>
+
+            <div class="refund">
+                <div class="icon-logo">
+                    <i class="fas fa-sync"></i>
+                </div>
+                <div class="refund-text">
+                    <h3 class="sh-text-1">Refund</h3>
+                    <p class="sh-text-2">Get refund within 3 days!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="text">
+                <h2><span>Our</span> Products</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas itaque eveniet beatae
+                    optio.</p>
+            </div>
+
+            <div class="cards">
+                <div class="card-1">
+                    <img src="img/products/product-img-1.jpg" alt="Strwaberry">
+                    <h3 class="text-1">Strawberry</h3>
+                    <p class="text-2">Per kg</p>
+                    <h3 class="rate">85$</h3>
+                    <button class="btn-1">
+                        <a href="/"><i class="ri-shopping-cart-2-fill"></i> Add to cart</a>
+                    </button>
+                </div>
+
+                <div class="card-2">
+                    <img src="img/products/product-img-2.jpg" alt="Strwaberry">
+                    <h3 class="text-1">Berry</h3>
+                    <p class="text-2">Per kg</p>
+                    <h3 class="rate">70$</h3>
+                    <button class="btn-1">
+                        <a href="/"><i class="ri-shopping-cart-2-fill"></i> Add to cart</a>
+                    </button>
+                </div>
+
+                <div class="card-3">
+                    <img src="img/products/product-img-3.jpg" alt="Strwaberry">
+                    <h3 class="text-1">Lemon</h3>
+                    <p class="text-2">Per kg</p>
+                    <h3 class="rate">35$</h3>
+                    <button class="btn-1">
+                        <a href="/"><i class="ri-shopping-cart-2-fill"></i> Add to cart</a>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="month-deal">
+            <section class="img-sec">
+                <div class="text-rate">
+                    <h3 class="is-rate">30%</h3>
+                    <p class="is-text">off per kg</p>
+                </div>
+                <img src="img/a.jpg" alt="">
+            </section>
+
+            <section id="deal-sec">
+                <div class="text-sec">
+                    <h2 class="md-text-1"><span>Deal</span> of the month</h2>
+                    <h3>Hikan Strwaberry</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+                        beatae,
+                        tempora tenetur dolorum voluptatibus excepturi non nemo accusantium aspernatur earum numquam
+                        dolores nesciunt? Modi maxime qui, culpa nulla itaque ea!</p>
+                </div>
+
+                <div class="time-boxes">
+                    <div class="box-1">
+                        <h3 class="bx-1n">00</h3>
+                        <p class="bx-1t">Days</p>
+                    </div>
+
+                    <div class="box-2">
+                        <h3 class="bx-2n">00</h3>
+                        <p class="bx-1t">Hours</p>
+                    </div>
+
+                    <div class="box-3">
+                        <h3 class="bx-1n">00</h3>
+                        <p class="bx-1t">Mins</p>
+                    </div>
+
+                    <div class="box-4">
+                        <h3 class="bx-1n">00</h3>
+                        <p class="bx-1t">Secs</p>
+                    </div>
+                </div>
+
+                <button class="btn-1">
+                    <a href="/"><i class="ri-shopping-cart-2-fill"></i> Add to cart</a>
+                </button>
+            </section>
+
+        </section>
+
+        <section class="team-sec">
+            <div class="team-carousel-inner">
+                <div class="mem-1">
+                    <img src="img/avaters/avatar1.png" alt="Saira Hakim">
+                    <h3 class="name">Saira Hakim</h3>
+                    <p>Local shop owner</p>
+                    <blockquote>
+                        <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id aspernatur optio
+                            eum aliquid ad harum expedita pariatur consequuntur necessitatibus adipisci nostrum
+                            laudantium ex, doloremque, nesciunt placeat velit debitis. Repellendus, cumque.</p>
+                    </blockquote>
+                </div>
+
+                <div class="mem-2">
+                    <img src="img/avaters/avatar2.png" alt="Willium Smith">
+                    <h3 class="name">Willium Smith</h3>
+                    <p>Local shop owner</p>
+                    <blockquote>
+                        <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id aspernatur optio
+                            eum aliquid ad harum expedita pariatur consequuntur necessitatibus adipisci nostrum
+                            laudantium ex, doloremque, nesciunt placeat velit debitis. Repellendus, cumque.</p>
+                    </blockquote>
+                </div>
+
+                <div class="mem-3">
+                    <img src="img/avaters/avatar3.png" alt="Nelon David">
+                    <h3 class="name">Nelon David</h3>
+                    <p>Local shop owner</p>
+                    <blockquote>
+                        <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id aspernatur optio
+                            eum aliquid ad harum expedita pariatur consequuntur necessitatibus adipisci nostrum
+                            laudantium ex, doloremque, nesciunt placeat velit debitis. Repellendus, cumque.</p>
+                    </blockquote>
+                </div>
+                <div class="mem-1">
+                    <img src="img/avaters/avatar1.png" alt="Saira Hakim">
+                    <h3 class="name">Saira Hakim</h3>
+                    <p>Local shop owner</p>
+                    <blockquote>
+                        <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id aspernatur optio
+                            eum aliquid ad harum expedita pariatur consequuntur necessitatibus adipisci nostrum
+                            laudantium ex, doloremque, nesciunt placeat velit debitis. Repellendus, cumque.</p>
+                    </blockquote>
+                </div>
+
+                <div class="mem-2">
+                    <img src="img/avaters/avatar2.png" alt="Willium Smith">
+                    <h3 class="name">Willium Smith</h3>
+                    <p>Local shop owner</p>
+                    <blockquote>
+                        <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id aspernatur optio
+                            eum aliquid ad harum expedita pariatur consequuntur necessitatibus adipisci nostrum
+                            laudantium ex, doloremque, nesciunt placeat velit debitis. Repellendus, cumque.</p>
+                    </blockquote>
+                </div>
+
+                <div class="mem-3">
+                    <img src="img/avaters/avatar3.png" alt="Nelon David">
+                    <h3 class="name">Nelon David</h3>
+                    <p>Local shop owner</p>
+                    <blockquote>
+                        <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id aspernatur optio
+                            eum aliquid ad harum expedita pariatur consequuntur necessitatibus adipisci nostrum
+                            laudantium ex, doloremque, nesciunt placeat velit debitis. Repellendus, cumque.</p>
+                    </blockquote>
+                </div>
+                <div class="mem-1">
+                    <img src="img/avaters/avatar1.png" alt="Saira Hakim">
+                    <h3 class="name">Saira Hakim</h3>
+                    <p>Local shop owner</p>
+                    <blockquote>
+                        <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id aspernatur optio
+                            eum aliquid ad harum expedita pariatur consequuntur necessitatibus adipisci nostrum
+                            laudantium ex, doloremque, nesciunt placeat velit debitis. Repellendus, cumque.</p>
+                    </blockquote>
+                </div>
+
+                <div class="mem-2">
+                    <img src="img/avaters/avatar2.png" alt="Willium Smith">
+                    <h3 class="name">Willium Smith</h3>
+                    <p>Local shop owner</p>
+                    <blockquote>
+                        <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id aspernatur optio
+                            eum aliquid ad harum expedita pariatur consequuntur necessitatibus adipisci nostrum
+                            laudantium ex, doloremque, nesciunt placeat velit debitis. Repellendus, cumque.</p>
+                    </blockquote>
+                </div>
+
+                <div class="mem-3">
+                    <img src="img/avaters/avatar3.png" alt="Nelon David">
+                    <h3 class="name">Nelon David</h3>
+                    <p>Local shop owner</p>
+                    <blockquote>
+                        <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id aspernatur optio
+                            eum aliquid ad harum expedita pariatur consequuntur necessitatibus adipisci nostrum
+                            laudantium ex, doloremque, nesciunt placeat velit debitis. Repellendus, cumque.</p>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <section class="intro-sec">
+            <div class="intro-video">
+                <div class="video-container">
+                    <div class="video-poster">
+                        <img src="img/abt.jpg" alt="poster">
+                        <button id="playButton" class="custom-play-button">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                    <iframe id="youtubePlayer" src="https://www.youtube.com/embed/So5REm9ZGKs" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="intro-text">
+            </div>
+
+            <div class="intro-text">
+                <p class="int-t1"> Since Year 1999</p>
+                <h1 class="int-t2">We are <span>Fruitkha</span></h1>
+                <p class="int-t3">Etiam vulputate ut augue vel sodales. In sollicitudin neque et massa porttitor
+                    vestibulum ac vel nisi. Vestibulum placerat eget dolor sit amet posuere. In ut dolor aliquet,
+                    aliquet sapien sed, interdum velit. Nam eu molestie lorem.
+
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente facilis illo repellat
+                    veritatis minus, et labore minima mollitia qui ducimus.</p>
+                <button class="info"><a href="|">Know More</a></button>
+            </div>
+
+        </section>
+
+        <section class="dis-sale">
+            <div class="dis-sale-content">
+                <h3 class="ds-h3">December sale is on! <br>
+                    with big <span>Discount...</span>
+                </h3>
+
+                <div class="percent">
+                    <span class="sl-text">
+                        Sale!<br>Upto
+                    </span>
+                    <span class="perc">50%</span>
+                    <span class="off">off</span>
+                </div>
+                <button class="shn"><a href="\">Shop now</a></button>
+            </div>
+        </section>
+
+        <!-- <section id="news-sec">
+            <div class="text-part">
+                <h1>Our News</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas itaque eveniet
+                    beatae optio.</p>
+            </div>
+
+            <div class="news-cards">
+                <div class="card-1">
+                    <img src="img/latest-news/news-bg-1.jpg" alt="Strawberries">
+                    <h3>You will vainly look for fruit on it in autumn.</h3>
+                    <p class="blog-meta">
+                        <span class="author"><i class="fas fa-user"></i> Admin</span>
+                        <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
+                    </p>
+                    <p class="main-te">Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi.
+                        Praesent vitae mattis nunc, egestas viverra eros.</p>
+                    <div class="link"><a href="!">Read more ></a></div>
+                </div>
+
+                <div class="card-2">
+                    <img src="img/latest-news/news-bg-2.jpg" alt="Strawberries">
+                    <h3>You will vainly look for fruit on it in autumn.</h3>
+                    <p class="blog-meta">
+                        <span class="author"><i class="fas fa-user"></i> Admin</span>
+                        <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
+                    </p>
+                    <p class="main-te">Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi.
+                        Praesent vitae mattis nunc, egestas viverra eros.</p>
+                    <div class="link"><a href="!">Read more ></a></div>
+                </div>
+
+                <div class="card-3">
+                    <img src="img/latest-news/news-bg-3.jpg" alt="Strawberries">
+                    <h3>You will vainly look for fruit on it in autumn.</h3>
+                    <p class="blog-meta">
+                        <span class="author"><i class="fas fa-user"></i> Admin</span>
+                        <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
+                    </p>
+                    <p class="main-te">Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi.
+                        Praesent vitae mattis nunc, egestas viverra eros.</p>
+                    <div class="link"><a href="!">Read more ></a></div>
+                </div>
+
+                <button class="mn"><a href="@">More News</a></button>
+            </div>
+        </section>
+
+        <section class="comp-logos">
+            <div class="logo-carousel-inner">
+                <div class="single-logo-item">
+                    <img src="img/company-logos/1.png" alt="">
+                </div>
+                <div class="single-logo-item">
+                    <img src="img/company-logos/2.png" alt="">
+                </div>
+                <div class="single-logo-item">
+                    <img src="img/company-logos/3.png" alt="">
+                </div>
+                <div class="single-logo-item">
+                    <img src="img/company-logos/4.png" alt="">
+                </div>
+                <div class="single-logo-item">
+                    <img src="img/company-logos/5.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="footer">
+            <div class="outer-footer">
+                <div class="about">
+                    <h2 class="widget-title">About us</h2>
+                    <p>Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                        doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
+                </div>
+
+                <div class="get-touch">
+                    <h2 class="widget-title">Get in Touch</h2>
+                    <ul>
+                        <li>34/8, East Hukupara, Gifirtok, Sadan.</li>
+                        <li>support@fruitkha.com</li>
+                        <li>+00 111 222 3333</li>
+                    </ul>
+                </div>
+
+                <div class="pages">
+                    <h2 class="widget-title">Pages</h2>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="subs">
+                    <h2 class="widget-title">Subscribe</h2>
+                    <p>Subscribe to our mailing list to get the latest updates.</p>
+                    <form action="post/">
+                        <input type="email" placeholder="Email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="innter-footer">
+                <div class="rights"></div>
+                <p>Copyrights &copy; 2018 - <a href="*">CoderMind</a> <span>All Rights Reserved.</span> <br>
+                    Distributed By - <a href="*">Danyal Yasir</a>
+                </p>
+                <div class="social-icons">
+                    <ul>
+                        <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-dribbble"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html> -->
