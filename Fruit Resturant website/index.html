@@ -60,6 +60,7 @@
             <ul>
                 <li><a href="#"><i class="fas fa-search"></i></a></li>
                 <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                <li><i class="ri-menu-fill"></i></li>
             </ul>
         </div>
     </nav>
@@ -68,19 +69,18 @@
         <p>Fresh & Organic</p>
         <h1>Delicious Seasonal Fruits</h1>
         <div class="buttons">
-            <button class="btn-1"><a href="#">Fruit Collection</a></button>
-            <button class="btn-2"><a href="#">Contact Us</a></button>
+            <a class="btn-1" href="#">Fruit Collection</a>
+            <a class="btn-2" href="#">Contact Us</a>
         </div>
     </div>
 
     <main>
-
         <section id="services">
             <div class="shiping">
                 <div class="icon-logo">
                     <i class="fas fa-shipping-fast"></i>
                 </div>
-                <div class="services-text">
+                <div class="shiping-text">
                     <h3 class="sh-text-1">Free Shipping</h3>
                     <p class="sh-text-2">When order over $75</p>
                 </div>
@@ -120,9 +120,8 @@
                     <h3 class="text-1">Strawberry</h3>
                     <p class="text-2">Per kg</p>
                     <h3 class="rate">85$</h3>
-                    <button class="btn-1">
-                        <a href="/"><i class="ri-shopping-cart-2-fill"></i> Add to cart</a>
-                    </button>
+                    <a class="btn-1" href="/"><i class="ri-shopping-cart-2-fill"></i> Add to cart</a>
+
                 </div>
 
                 <div class="card-2">
@@ -130,9 +129,7 @@
                     <h3 class="text-1">Berry</h3>
                     <p class="text-2">Per kg</p>
                     <h3 class="rate">70$</h3>
-                    <button class="btn-1">
-                        <a href="/"><i class="ri-shopping-cart-2-fill"></i> Add to cart</a>
-                    </button>
+                    <a class="btn-1" href="/"><i class="ri-shopping-cart-2-fill"></i> Add to cart</a>
                 </div>
 
                 <div class="card-3">
@@ -140,9 +137,7 @@
                     <h3 class="text-1">Lemon</h3>
                     <p class="text-2">Per kg</p>
                     <h3 class="rate">35$</h3>
-                    <button class="btn-1">
-                        <a href="/"><i class="ri-shopping-cart-2-fill"></i> Add to cart</a>
-                    </button>
+                    <a class="btn-1" href="/"><i class="ri-shopping-cart-2-fill"></i> Add to cart</a>
                 </div>
             </div>
         </section>
@@ -186,10 +181,7 @@
                         <p class="bx-1t">Secs</p>
                     </div>
                 </div>
-
-                <button class="btn-1">
-                    <a href="/"><i class="ri-shopping-cart-2-fill"></i> Add to cart</a>
-                </button>
+                <a class="btn-1" href="/"><i class="ri-shopping-cart-2-fill"></i> Add to cart</a>
             </section>
 
         </section>
@@ -323,7 +315,7 @@
 
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente facilis illo repellat
                     veritatis minus, et labore minima mollitia qui ducimus.</p>
-                <button class="info"><a href="|">Know More</a></button>
+                <a class="info" href="|">Know More</a>
             </div>
 
         </section>
@@ -341,60 +333,86 @@
                     <span class="perc">50%</span>
                     <span class="off">off</span>
                 </div>
-                <button class="shn"><a href="\">Shop now</a></button>
+                <a class="shn" href="\">Shop now</a>
             </div>
         </section>
 
-        <!-- <section id="news-sec">
+        <section id="news-sec">
             <div class="text-part">
-                <h1>Our News</h1>
+                <h1><span>Our</span> News</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas itaque eveniet
                     beatae optio.</p>
             </div>
 
             <div class="news-cards">
                 <div class="card-1">
-                    <img src="img/latest-news/news-bg-1.jpg" alt="Strawberries">
-                    <h3>You will vainly look for fruit on it in autumn.</h3>
-                    <p class="blog-meta">
-                        <span class="author"><i class="fas fa-user"></i> Admin</span>
-                        <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
-                    </p>
-                    <p class="main-te">Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi.
-                        Praesent vitae mattis nunc, egestas viverra eros.</p>
-                    <div class="link"><a href="!">Read more ></a></div>
+                    <div class="image-part-1">
+                        <img src="img/latest-news/news-bg-1.jpg" alt="Strawberries">
+                    </div>
+                    <div class="card1-cont">
+                        <h3>You will vainly look for fruit on it in autumn.</h3>
+                        <p class="blog-meta">
+                            <span class="author"><i class="fas fa-user"></i> Admin</span>
+                            <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
+                        </p>
+                        <p class="main-te">Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi.
+                            Praesent vitae mattis nunc, egestas viverra eros.</p>
+                        <div class="link"><a href="!">read more <i class="ri-arrow-drop-right-line"></i></a></div>
+                    </div>
                 </div>
 
                 <div class="card-2">
-                    <img src="img/latest-news/news-bg-2.jpg" alt="Strawberries">
-                    <h3>You will vainly look for fruit on it in autumn.</h3>
-                    <p class="blog-meta">
-                        <span class="author"><i class="fas fa-user"></i> Admin</span>
-                        <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
-                    </p>
-                    <p class="main-te">Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi.
-                        Praesent vitae mattis nunc, egestas viverra eros.</p>
-                    <div class="link"><a href="!">Read more ></a></div>
+                    <div class="image-part-2">
+                        <img src="img/latest-news/news-bg-2.jpg" alt="Strawberries">
+                    </div>
+                    <div class="card2-cont">
+                        <h3>You will vainly look for fruit on it in autumn.</h3>
+                        <p class="blog-meta">
+                            <span class="author"><i class="fas fa-user"></i> Admin</span>
+                            <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
+                        </p>
+                        <p class="main-te">Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi.
+                            Praesent vitae mattis nunc, egestas viverra eros.</p>
+                        <div class="link"><a href="!">read more<i class="ri-arrow-drop-right-line"></i></a></div>
+                    </div>
                 </div>
 
                 <div class="card-3">
-                    <img src="img/latest-news/news-bg-3.jpg" alt="Strawberries">
-                    <h3>You will vainly look for fruit on it in autumn.</h3>
-                    <p class="blog-meta">
-                        <span class="author"><i class="fas fa-user"></i> Admin</span>
-                        <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
-                    </p>
-                    <p class="main-te">Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi.
-                        Praesent vitae mattis nunc, egestas viverra eros.</p>
-                    <div class="link"><a href="!">Read more ></a></div>
+                    <div class="image-part-3">
+                        <img src="img/latest-news/news-bg-3.jpg" alt="Strawberries">
+                    </div>
+                    <div class="card3-cont">
+                        <h3>You will vainly look for fruit on it in autumn.</h3>
+                        <p class="blog-meta">
+                            <span class="author"><i class="fas fa-user"></i> Admin</span>
+                            <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
+                        </p>
+                        <p class="main-te">Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi.
+                            Praesent vitae mattis nunc, egestas viverra eros.</p>
+                        <div class="link"><a href="!">read more<i class="ri-arrow-drop-right-line"></i></a></div>
+                    </div>
                 </div>
-
-                <button class="mn"><a href="@">More News</a></button>
             </div>
+            <a class="news-button" href="@">More News</a>
         </section>
 
         <section class="comp-logos">
             <div class="logo-carousel-inner">
+                <div class="single-logo-item">
+                    <img src="img/company-logos/1.png" alt="">
+                </div>
+                <div class="single-logo-item">
+                    <img src="img/company-logos/2.png" alt="">
+                </div>
+                <div class="single-logo-item">
+                    <img src="img/company-logos/3.png" alt="">
+                </div>
+                <div class="single-logo-item">
+                    <img src="img/company-logos/4.png" alt="">
+                </div>
+                <div class="single-logo-item">
+                    <img src="img/company-logos/5.png" alt="">
+                </div>
                 <div class="single-logo-item">
                     <img src="img/company-logos/1.png" alt="">
                 </div>
@@ -415,13 +433,14 @@
 
         <section id="footer">
             <div class="outer-footer">
-                <div class="about">
+                <div class="foot-cont about">
                     <h2 class="widget-title">About us</h2>
-                    <p>Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                    <p class="foot-par">Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium
                         doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
                 </div>
 
-                <div class="get-touch">
+                <div class="foot-cont get-touch">
                     <h2 class="widget-title">Get in Touch</h2>
                     <ul>
                         <li>34/8, East Hukupara, Gifirtok, Sadan.</li>
@@ -430,31 +449,32 @@
                     </ul>
                 </div>
 
-                <div class="pages">
+                <div class="foot-cont pages">
                     <h2 class="widget-title">Pages</h2>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="#">News</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><i class="ri-arrow-drop-right-line"></i><a href="#">Home</a></li>
+                        <li><i class="ri-arrow-drop-right-line"></i><a href="#">About</a></li>
+                        <li><i class="ri-arrow-drop-right-line"></i><a href="#">Shop</a></li>
+                        <li><i class="ri-arrow-drop-right-line"></i><a href="#">News</a></li>
+                        <li><i class="ri-arrow-drop-right-line"></i><a href="#">Contact</a></li>
                     </ul>
                 </div>
-
-                <div class="subs">
+                <div class="foot-cont subs">
                     <h2 class="widget-title">Subscribe</h2>
-                    <p>Subscribe to our mailing list to get the latest updates.</p>
+                    <p class="foot-par">Subscribe to our mailing list to get the latest updates.</p>
                     <form action="post/">
                         <input type="email" placeholder="Email">
                         <button type="submit"><i class="fas fa-paper-plane"></i></button>
                     </form>
                 </div>
             </div>
-            <div class="innter-footer">
-                <div class="rights"></div>
-                <p>Copyrights &copy; 2018 - <a href="*">CoderMind</a> <span>All Rights Reserved.</span> <br>
-                    Distributed By - <a href="*">Danyal Yasir</a>
-                </p>
+            <div class="inner-footer">
+                <div class="rights">
+                    <p class="foot-par">Copyrights &copy; 2018 - <a href="*">CoderMind</a> <span>, All Rights
+                            Reserved.</span> <br>
+                        Distributed By - <a href="*">Danyal Yasir</a>
+                    </p>
+                </div>
                 <div class="social-icons">
                     <ul>
                         <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
@@ -469,4 +489,4 @@
     </main>
 </body>
 
-</html> -->
+</html>
