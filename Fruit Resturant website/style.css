@@ -1323,19 +1323,14 @@ main {
         #services .refund .icon-logo i {
             color: var(--major-color);
             font-size: clamp(1.5rem, 1.35rem + 0.8vw, 2rem);
-            width: 5rem;
-            /* ✅ FIXED WIDTH */
-            height: 5rem;
-            /* ✅ FIXED HEIGHT (same as width) */
+            width: 5rem; 
+            height: 5rem; 
             border: 2px dotted var(--major-color);
-            border-radius: 50%;
-            /* ✅ NOW perfect circle */
-            display: flex;
-            /* ✅ Center icon perfectly */
+            border-radius: 50%; 
+            display: flex; 
             justify-content: center;
             align-items: center;
-            margin: 0;
-            /* ✅ Remove any default margins */
+            margin: 0; 
         }
 
 
@@ -1456,8 +1451,7 @@ main {
 
         .subs {
             transform: translateX(0%);
-        }
-
+        } 
 
         .inner-footer {
             display: flex;
