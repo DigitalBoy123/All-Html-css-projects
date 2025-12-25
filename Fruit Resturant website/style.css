@@ -1175,11 +1175,12 @@ main {
     .intro-sec {
         background-color: var(--white-color);
         width: 100%;
-        min-height: 100vh;
+        min-height: 55vh;
         display: flex;
         justify-content: space-around;
         align-items: center;
         flex-direction: column;
+        margin-bottom: 4rem;
         padding: 0 5%;
     }
 
@@ -1331,8 +1332,7 @@ main {
             justify-content: center;
             align-items: center;
             margin: 0; 
-        }
-
+        } 
 
         #services .shiping .shiping-text h3,
         #services .support .support-text h3,
