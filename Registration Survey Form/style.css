@@ -334,7 +334,7 @@ textarea {
     transform: translateY(0);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 790px) {
     body {
         padding: var(--spacing-sm);
     }
